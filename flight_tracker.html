@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>Pocket Travels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+body{font-family: myFont; background-image: url("https://www.hextraveler.com/wp-content/uploads/2019/08/avion-en-vuelo.jpg");
+ background-repeat: no-repeat;
+  background-size: 100%;
+background-attachment: fixed;  }
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left:0;
+   right:0;
+  width: 100%;
+}
+
+li {
+  float:left;
+  font-size:20px;
+}
+
+li.b a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 23px 16px;
+  text-decoration: none;
+}
+li.b a:hover {
+  color:#00a1c6;
+  text-decoration: none;
+}
+.tracker{ padding:60px;
+padding-top:60px;
+margin:50px;
+border-radius:20px;
+margin-top:0px; background: rgba(0, 0, 0, 0.9);}
+h1{ color: black; font-size: 40px; text-align:center;}
+p{ color: black; font-size: 30px; text-align:center;}
+.space{ padding-top:75px;}
+</style>
+<body>
+    <ul>
+	<li>
+      <a href="index.html"><img src="airologo.png"></a></li>
+	  <li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li>
+  <li class="b"><a href="SignIn.html">Dashboard</a></li>
+  <li class="b"><a href="locations.html">Locations</a></li>
+  <li class="b"><a href="SignIn.html">Booking</a></li>
+  <li class="b"><a href="flight_tracker.html">Flight Tracking</a></li>
+  </ul>
+  <div class="space">
+  <h1>Flight Tracker - Track flights around the world instantly!</h1>	
+  <div class="tracker">
+<iframe title="FlightRadar24" class="website" type="text/html"
+width="1100px" height="500px" src="http://www.flightradar24.com/simple_index.php?lat=12.9&lon=74.8&z=8&airports= 1&label1=callsign&label2=altspeed&label3=tofrom&si ze=auto"
+frameborder="0" allowFullScreen></iframe>
+</div>
+</div>
+</body>
+
+</html>    

@@ -1,0 +1,147 @@
+<html>
+<link rel="stylesheet" href="style.css">
+<div class = "center">
+    <body>
+
+       <ul>
+<li><a href="index.html"><img src="airologo.png"></a></li>
+<li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li>
+ <li class="b"><a href="dashboard.php">Dashboard</a></li>
+  <li class="b"><a href="locations.html">Locations</a></li>
+  <li class="b"><a href="booking.html">Booking</a></li>
+  <li class="b"><a href="flight_tracker.html">Flight Tracking</a></li>
+  </ul>
+  <div class="space">	
+            <h1>Personal Details </h1>
+            <div class="transbox">
+			 <div class="impact">
+		<div class="row">
+	    <div class="column">
+		<div class="fsizebox">
+                    <form action="indi.php" method="post">
+                        <p><label>First Name: </label><br>
+                        <input type="text" name="fname" class="fsizebox"></p>
+                        <p><label for="lname">Last Name: </label><br>
+                        <input type="text" name="lname" class="fsizebox"></p>
+						<p><label for="passp">Passport Number: </label><br>
+                        <input type="text" name="paspp" class="fsizebox"></p>
+						<p><label for="pexpiry">Passport Expiry: </label><br>
+                        <input type="date" name="pexpiry" class="fsizebox"></p>
+                        <p><label for="email">Email ID: </label><br>
+                        <input type="email" name="email" class="fsizebox"></p>
+                        <p><label for="phone">Contact Number: </label><br>
+                        <input type="tel" name="phone" class="fsizebox"></p>
+						<p><label for="address">Home Address: </label><br>
+                        <input type="text" name="address" class="fsizebox"></p>
+						<p><label for="city">City: </label><br>
+                        <input type="text" name="city" class="fsizebox"></p>
+						<p><label for="pin">PIN Code: </label><br>
+                        <input type="number"name="pin" class="fsizebox"></p>
+                        <p><label for="payment">Payment Method: </label><br>
+                        <img class="a" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png">
+                        <input type="radio" name="payment" class="fsizebox">
+                        <img class="a" src="https://i.pinimg.com/originals/55/34/77/5534771eb3bb4e09079745777b08149a.png">
+                        <input type="radio" name="payment" class="fsizebox"></p>
+			</div>
+						
+        </div>
+		<div class="column">
+		<div class="point">
+		<span class="points">1. The passport number is located on the same page as your photograph.</span><br><br>
+		<span class="points">2. Do not use spaces when entering your passport number, even if they appear in your actual passport (see example below).</span><br><br>
+		<span class="points">3.<b>- Example:</b> M0993353</span><br><br>
+		</div>
+		<img src="passport.png" class="b">
+		
+		</div>
+		</div>
+		
+						<input type="submit" class="button" name="save" value="Download E-Ticket" formtarget="_blank">
+						</div>
+        </form>
+</div>
+</div>
+</div>
+ </body>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left:0;
+   right:0;
+  width: 100%;
+}
+
+li {
+  float:left;
+  font-size:20px;
+}
+
+li.b a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 23px 16px;
+  text-decoration: none;
+}
+li.b a:hover {
+  color:#00a1c6;
+  text-decoration: none;
+}
+.point{ text-align:left; margin-left:50px; margin-right:40px;}
+.row {
+  display: flex;
+}
+.fsizebox{
+  font-size: 20px;
+  text-align:left;
+}
+img.a{
+ width:50px;
+    height:50px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+img.b{
+width:450px;
+height:616px;
+}
+body {
+  background-image: url("https://www.hextraveler.com/wp-content/uploads/2019/08/avion-en-vuelo.jpg");
+ background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; 
+font-family:myFont;  
+	 }
+h1 {
+    color: black;
+	font-size: 40px;
+	text-decoration-color: black;
+	display:inline;
+	vertical-align:middle;
+	font-family: myFont;
+}
+.impact {
+  font-family: Montserrat;
+  }
+.center {
+	text-align: center;
+	}
+.transbox {
+  border-radius: 30px;
+  margin: 10px;
+  padding: 30px;
+  margin-right: 300px;
+  margin-left: 300px;
+  background-color: #000000;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+		 }
+		 .space{ padding-top:90px;}
+</style>
+</html>

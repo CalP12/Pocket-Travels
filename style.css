@@ -1,0 +1,63 @@
+.topleft{position:absolute;left:0;top:0}
+
+.padding-large{padding:12px 24px!important}
+
+.xlarge{font-size:24px!important}
+
+.middle{ position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align:center;	
+  transform: translate(-50%, -50%);}
+  
+.head-size{font-size:64px; width:900px;color:white;}
+
+.animate{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.button {
+ font-family: myFont;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #00a1c6; 
+  color: white; 
+  border: 2px solid #00a1c6;
+  border-radius:50px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #00a1c6;
+  text-decoration:none;
+}
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+
+  filter: brightness(50%);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(fonts/gordita_medium.woff);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat.woff);
+}
+@font-face {
+  font-family: my2Font;
+  src: url(fonts/gordita_light.woff);
+}

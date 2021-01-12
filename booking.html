@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+						<title>Booking</title>
+						<link rel="stylesheet" href="style.css">
+<ul>
+<li><a href="index.html"><img src="airologo.png"></a></li>
+<li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li><li class="b"><a href=""></a></li>
+  <li class="b"><a href="dashboard.php">Dashboard</a></li>
+  <li class="b"><a href="locations.html">Locations</a></li>
+  <li class="b"><a href="booking.html">Booking</a></li>
+  <li class="b"><a href="flight_tracker.html">Flight Tracking</a></li>
+  </ul>
+<div class="space">						
+<div class = "center">
+<body>
+<head>
+<h1>Ticket Booking</h1>
+</head>
+<div class = "impact">
+<span class="fsizebox">
+<div class = "transbox">
+<select name="way" id="way" class="fsizebox">
+	<option value="two">Round-Trip</option>
+	<option value="one">One Way</option>
+</select>
+<button class="fsizebox" onclick="disappear()">Select</button>
+<form action="flight2.php" method="POST" >
+<p><label for="from">From: </label>
+<select name="from" id="from" class="fsizebox">
+	<option value="Mangalore (IXE)">Mangalore (IXE)</option>
+	<option value="Bengalore (BLR">Bengalore (BLR)</option>
+	<option value="New Delhi (DEL)">New Delhi (DEL)</option>
+	<option value="Chennai (MAA)">Chennai (MAA)</option>
+	<option value="Mumbai (BOM)">Mumbai (BOM)</option>
+	<option value="Cochin (COK)">Cochin (COK)</option>
+	<option value="Goa (GOI)">Goa (GOI)</option>
+	<option value="Calicut (CCJ)">Calicut (CCJ)</option>
+	<option value="Hyderabad (HYD)">Hyderabad (HYD)</option>
+</select>
+
+<label for="to">To: </label>
+<select name="to" id="to" class="fsizebox">
+	<option value="Dubai (DXB)">Dubai (DXB)</option>
+	<option value="Abu Dhabi (AUH)">Abu Dhabi (AUH)</option>
+	<option value="Riyadh (RUH)">Riyadh (RUH)</option>
+	<option value="Kathmandu (KTM)">Kathmandu (KTM)</option>
+	<option value="Singapore (SIN)">Singapore (SIN)</option>
+	<option value="Kuala Lumpur (KUL)">Kuala Lumpur (KUL)</option>
+	<option value="Hong Kong (HKG)">Hong Kong (HKG)</option>
+</select>
+
+</p>
+<p><label for="depart">Depart:</label> <input max="2021-12-15" class="fsizebox" min="2020-12-15" name="depart" type="date" id="depart"/></p>
+<div id="ret">
+<p><label for="return">Return:</label> <input max="2021-12-31" class="fsizebox" min="2020-12-17" name="return" type="date" id="retur" /></p>
+</div>
+<p><label for="clax">Class: </label>
+	<select name="clax" id="clax" class="fsizebox">
+		<option value="Economy">Economy</option>
+		<option value="Premium Economy">Premium Economy</option>
+		<option value="Business">Business</option>
+		<option value="First Class">First Class</option>
+	</select>
+</p>
+
+<p><br>
+<input type="submit" value="Search Flights " class="button" onclick ="searched();"/></p>
+</div>
+</span>
+</div>
+</form>
+</div>
+</div>
+</body>
+<script>
+
+function disappear() {
+  var a = document.getElementById("way").value;
+  var x = document.getElementById("ret");
+  if (a == "one")
+  {
+  	x.style.display = "none";
+  }
+  else
+  {
+  	x.style.display = "block";
+  }
+}
+function searched() {
+   
+	var from=document.getElementById("from").value;
+		localStorage.setItem("from",from);
+	var toa=document.getElementById("to").value;
+		localStorage.setItem("tob",toa);
+	var depart = document.getElementById("depart").value;
+		localStorage.setItem("depart",depart);
+	return false;
+}
+
+</script>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left:0;
+   right:0;
+  width: 100%;
+}
+
+li {
+  float:left;
+  font-size:20px;
+}
+
+li.b a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 23px 16px;
+  text-decoration: none;
+}
+li.b a:hover {
+  color:#00a1c6;
+  text-decoration: none;
+}
+.fsizebox{
+  font-size: 20px;
+}
+.transbox {
+  border-radius: 50px;
+  margin: 10px;
+  padding: 24px;
+  padding-top:30px;
+  margin-right: 300px;
+  margin-left: 300px;
+  background-color: #000000;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  }
+.center {
+	text-align: center;
+		}
+body {
+  background-image: url("https://www.hextraveler.com/wp-content/uploads/2019/08/avion-en-vuelo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: myFont; 
+
+	 }
+.impact {
+  font-family: Montserrat;
+  }
+h1 {
+	font-size:40px;
+	color: black;
+	font-family:myFont;
+	display: inline;
+	vertical-align:middle;
+}
+.space{ padding-top:120px;}
+
+
+</html>
